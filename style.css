@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#double-container {
+  display: flex;
+}
+
+#left-side {
+  flex: 3;
+  height: 100vh;
+}
+
+#left-side img {
+  height: 100vh;
+}
+
+#right-side {
+  flex: 4;
+}
+p {
+  margin: 0;
+}
