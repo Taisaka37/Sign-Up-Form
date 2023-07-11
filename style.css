@@ -1,5 +1,18 @@
-body {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  @font-face {
+    font-family: 'norsebold';
+    src: url('norse-bold-webfont.woff2') format('woff2'),
+         url('norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 #double-container {
   display: flex;
@@ -13,8 +26,111 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 60vw;
+  position: relative;
 }
 
 p {
   margin: 0;
+}
+
+#right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+}
+
+
+#top-block {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 25rem;
+}
+
+.left-padding {
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.button {
+  background-color: rgb(0, 97, 0);
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  color: white;
+}
+
+.top-margin {
+  margin-top: 2rem;
+}
+
+input, label {
+  display: block;
+}
+
+.float-left {
+  float: left;
+  margin-right: 3rem;
+ }
+
+ form > div {
+  margin-bottom: 1rem;
+ }
+
+ label {
+  font-size: 15px;
+ }
+
+ form div input {
+  background-color: rgba(245, 245, 245, 0.5);
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  border-radius: 5px;
+  width: 240px;
+  height: 1.5rem;
+ }
+ 
+ div > img {
+  width: 150px;
+ }
+
+ #logo {
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20%;
+  font-family: 'norsebold', sans-serif;
+  font-size: 9rem;
+  color: white;
+ }
+ 
+ div + p {
+  align-self: flex-end;
+ }
+
+ input + p > a {
+  color:  rgb(0, 97, 0);
+  text-decoration: none;
+ }
+ 
+ .footer {
+  position: absolute;
+  bottom: 10px;
+  left: 220px;
+ }
+ .footer p {
+  color: white;
+  font-size: 20px;
+ }
+.footer a {
+  color: white;
+}
+
+:invalid {
+  border-color: red;
 }

@@ -10,34 +10,53 @@
 <body>
   <div id="double-container">
     <div id="left-side">
+      <div id="logo">
+        <img src="odin-lined.png" alt="">
+        <p>ODIN</p>
+      </div>
+      <div class="footer">
+      <p>Photo by <a href="https://unsplash.com/@olenkasergienko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olena Sergienko</a> on <a href="https://unsplash.com/photos/r0M9HrfJMBM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    </div>
     </div>
     <div id="right-side">
-      <div>
+      <div id="top-block" class="left-padding">
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
         <p>Sign up now to get started.</p>
         <br>
         <p>You know you want to.</p>
       </div>
-      <div>
+      <div class="left-padding white-background">
+        <h2>Let's do this!</h2>
         <form action="" id="first">
-          <h2>Let's do this!</h2>
-            <label for="fname">FIRST NAME</label>
-            <input type="text" name="fname" id="fname" required>
-            <label for="lname">LAST NAME</label>
-            <input type="text" name="lname" id="lname" required>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="pass">PASSWORD</label>
-            <input type="password" name="pass" id="pass" required>
-            <label for="rpass">REPEAT PASSWORD</label>
-            <input type="password" name="rpass" id="rpass" required>
+            <div class="float-left">
+              <label for="fname">FIRST NAME</label>
+              <input type="text" name="fname" id="fname" required>
+            </div>
+            <div>
+              <label for="lname">LAST NAME</label>
+              <input type="text" name="lname" id="lname" required>
+            </div>
+            <div class="float-left">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="float-left">
+              <label for="pass">PASSWORD</label>
+              <input type="password" name="pass" id="pass" required>
+            </div>
+            <div>
+              <label for="cpass">CONFIRM PASSWORD</label>
+              <input type="password" name="cpass" id="cpass" required>
+            </div>
         </form>
       </div>
-      <div>
-        <input type="submit" value="Create Account" id="first">
-        <p>Already have an account? Log in</p>
+      <div class="left-padding">
+        <input type="submit" value="Create Account" id="first" class="top-margin button">
+        <p class="top-margin">Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
   </div>
